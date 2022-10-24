@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+    color: #5D5D7D;
+}
+
+.wrapper {  /* Indicar que o wrapper (a minha div que engloba toda minha tela) vá ocupar toda a tela. */
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-left {
+    display: inline-block;
+    width: 60%; /* Indico que o meu container-left ocupa 60% da mina tela */
+}
+
+.container-right {
+    display: inline-block;
+    background-color: rgb(93, 93, 125, 0.16); /* Background-Color - Aplicada a cor e a opacidade apenas na cor do plano de fundo e não ns elementos do container (utilizado o google para conver a cor hexadecimal em RGB). */
+    height: 100vh;
+    width: 40%;
+    position: absolute;
+}
+
+.img {
+    position: relative; /* Indica um posicionamento relaivo ao container-right. */
+    top: 22%; /* Posicionamento relativo ao top do container (no caso o top da tela). */
+    right: 131px; /* Posicionamento relativo à direita da tela. */
+}
+
+header {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 41px;
+    width: 376px;
+    height: 41.12px;
+    color: #5D5D7D;
+    display: inline;
+    margin-left: 57px;
+    margin-top: 24px;
+}
+
+a {
+    margin-right: 41px;
+}
+
+#button-work {
+    opacity: 0.4;
+}
+
+a:link {
+    text-decoration: none; /* Retira o sublinhado padrão do link. */
+}
+
+a:hover{
+    opacity: .7;
+}
+
+a:active {
+    opacity: .5;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 70px;
+    line-height: 80px;
+    color: #5D5D7D;
+    width: 368px;
+    height: 160px;
+    margin-left: 136px;
+    margin-top: 300px;
+    display: inline-block;
+}
+p {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    color: #5D5D7D;
+    opacity: 0.6;
+    width: 540px;
+    height: 144px;
+    margin: 15px 0 15px 136px;
+}
+
+#button-end {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #9499EA;
+    box-shadow: 0px 10px 24px rgba(148, 153, 234, 0.0979959);
+    border-radius: 40px;
+    width: 269px;
+    height: 62px;
+    margin-left: 136px;
+    margin-bottom: 123px;
+    cursor: pointer;
+    border: none;
+}
+button:hover {
+    opacity: .8; /* Definindo para alterar a transparência do botao ao passar com o cursor em cima. */
+}
+
+button:active {
+    opacity: .5; /* Ao clicar no botão fica ainda mais opaco em relação a simplesmente passar o cursor em cima. */
+}
+
+@media screen and (max-width: 1315px){
+
+    .wrapper {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+
+    }
+    .container-left{
+        height: 50%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        display: block;
+        position: static;
+        margin-left: 5px;
+    }
+
+    .container-right {
+        height: 50%;
+        width: 100%;
+        display: block;
+        position: static;
+        padding: 50px;
+        margin-bottom: 0px;
+    }
+
+    img {
+        position: relative;
+        top: 25%;
+        width: 80%;
+        left: 19px;
+    }
+
+    header {
+        display: none;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height: 52px;
+        width: auto;
+        margin: 58px 50px 0 50px;
+        text-align: center;
+        align-content: center;
+    }
+
+    p {
+        margin: 5px 40px;
+        width: auto;
+        font-size: 14px;
+        line-height: 24px;
+        text-align: center;
+        align-content: center;
+    }
+
+    #button-end {
+        position: absolute;
+        top: 350px;
+        right: 15%;
+    }
+        
+}
